@@ -12,11 +12,6 @@ export interface Result {
   mode: number;
 }
 
-export interface AlcoholClass {
-  class: number;
-  flavanoids: number[];
-}
-
 // Handler function to calculate the mean, median and mode for Flavanoids
 const getCalculations = (Class: number): [number, number, number] => {
   const classDataExtract: any = WineData.filter(
